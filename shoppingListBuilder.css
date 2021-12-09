@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(204, 110, 16);
+    background-color: rgb(255, 239, 151);
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#mealsHead {
+    text-align: center;
+}
+
+#mealPlanner {
+    position: absolute;
+    right: 1vw;
+    width: 73vw;
+    top: 4vw;
+}
+
+#saved {
+    width: 33vw;
+    border: 2px groove white;
+    padding: 0 1vw 0 .5vw;
+}
+
+hr {
+    color: white;
+}
+
+ul {
+    display: -webkit_flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+li {
+    flex-basis: 250px;
+    flex-grow: 0;
+    padding: 0px 10px 10px 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+@media (orientation: landscape) {
+    li img {
+        padding: 0;
+        width: 20vw;
+        height: auto;
+    }
+}
+
+@media (orientation: portrait) {
+    li img {
+        padding: 0;
+        width: 55vw;
+        height: auto;
+    }
+}
